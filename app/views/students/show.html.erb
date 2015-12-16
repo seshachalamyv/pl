@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Cans:</strong>
+  <%= @student.cans %>
+</p>
+
+<p>
+  <strong>Wansnans:</strong>
+  <%= @student.wansnans %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
+<p>
+</p>
+<ol>
+<% @q.each do |st| %>
+
+	<li>
+		
+  <p>
+  <strong>Question:</strong>
+  <%= st.question %>
+</p>
+
+<p>
+  <strong>A:</strong>
+  <%= st.a %>
+</p>
+
+<p>
+  <strong>B:</strong>
+  <%= st.b %>
+</p>
+
+<p>
+  <strong>C:</strong>
+  <%= st.c %>
+</p>
+
+<p>
+  <strong>D:</strong>
+  <%= st.d %>
+</p>
+
+<p>
+  <strong>Ans:</strong>
+  <%= st.ans %>
+</p>
+	</li>
+
+ <% end %>
+
+</ol>
